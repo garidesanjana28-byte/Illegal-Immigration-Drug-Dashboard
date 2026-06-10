@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Illegal Immigration & Drug Trafficking Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+<h1>Illegal Immigration & Drug Trafficking Dashboard</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>Total Cases</h2>
+<p>250</p>
+</div>
+
+<div class="card">
+<h2>Drug Cases</h2>
+<p>120</p>
+</div>
+
+<div class="card">
+<h2>Active Alerts</h2>
+<p>18</p>
+</div>
+
+<div class="card">
+<h2>Border Crossings</h2>
+<p>56</p>
+</div>
+
+</div>
+
+<h2>Monthly Cases Overview</h2>
+<canvas id="barChart"></canvas>
+
+<h2>Cases Distribution</h2>
+<canvas id="pieChart"></canvas>
+
+<h2>Add New Incident</h2>
+
+<input type="text" id="location" placeholder="Location">
+<input type="text" id="type" placeholder="Type">
+<button onclick="addIncident()">Add Incident</button>
+
+<br><br>
+
+<input type="text"
+id="searchInput"
+placeholder="Search Location"
+onkeyup="searchRecords()">
+
+<h2>Incident Records</h2>
+
+<table id="incidentTable">
+
+<tr>
+<th>Location</th>
+<th>Type</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>Delhi</td>
+<td>Immigration</td>
+<td>Active</td>
+<td>Delete</td>
+</tr>
+
+<tr>
+<td>Punjab</td>
+<td>Drug Case</td>
+<td>Closed</td>
+<td>Delete</td>
+</tr>
+
+<tr>
+<td>Mumbai</td>
+<td>Drug Trafficking</td>
+<td>Active</td>
+<td>Delete</td>
+</tr>
+
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
