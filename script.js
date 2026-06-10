@@ -1,5 +1,3 @@
-// BAR CHART
-
 new Chart(
 document.getElementById("barChart"),
 {
@@ -9,13 +7,7 @@ labels:["Jan","Feb","Mar","Apr","May","Jun"],
 datasets:[{
 label:"Cases",
 data:[10,20,15,30,25,40],
-backgroundColor:"skyblue"
-}]
-}
-}
-);
-
-// PIE CHART
+backgroundColor:"skyblue"}]}});
 
 new Chart(
 document.getElementById("pieChart"),
@@ -30,14 +22,10 @@ datasets:[{
 data:[60,40],
 backgroundColor:[
 "cyan",
-"pink"
-]
-}]
-}
+"pink"]}]}
 }
 );
 
-// ADD INCIDENT
 
 function addIncident(){
 
@@ -51,8 +39,6 @@ if(location==="" || type===""){
 alert("Fill all fields");
 return;
 }
-
-// ONLY 3 TYPES ALLOWED
 
 const allowedTypes = [
 "Immigration",
@@ -86,13 +72,11 @@ row.insertCell(3).innerHTML =
 '<span onclick="deleteRow(this)" style="cursor:pointer;">Delete</span>';
 }
 
-// DELETE
 
 function deleteRow(btn){
 btn.parentElement.parentElement.remove();
 }
 
-// SEARCH
 
 function searchRecords(){
 
